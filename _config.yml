@@ -1,6 +1,8 @@
 safe: true
 lsi: false
 pygments: true
+paginate: 1
+paginate_path: "/:num"
 title: Pocket Linesman
 description: Replace this sentence with a better description.
 
