@@ -6,13 +6,13 @@
         {% include seo_header.html %}
         <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
         {% for css_name in page.extra_css %}
-            <link rel="stylesheet" href="{{ css_name }}">
-        {% endfor %}
-        {% for js_name in page.extra_js %}
-            <script type="text/javascript" src="{{ js_name }}"></script>
+            <link rel="stylesheet" href="{{ site.url }}/{{ css_name }}">
         {% endfor %}
     </head>
     <body>
         {{content}}
+        {% for js_name in page.extra_js %}
+            <script type="text/javascript" src="{{ site.url }}/{{ js_name }}"></script>
+        {% endfor %}
     </body>
 </html>
