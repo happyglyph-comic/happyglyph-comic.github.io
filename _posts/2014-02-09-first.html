@@ -4,15 +4,45 @@ publisher_gplus: taco
 title: Happy Glyph Comic
 description: Taco
 extra_css:
-  - assets/css/reset.css
+  - //netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css
   - assets/css/common.css
   - assets/css/desktop.css
+extra_js:
+  - http://code.jquery.com/jquery-2.1.0.min.js
+  - //netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js
 ---
 <header class="title-bar">
     <ul class="left-menu menu-bar">
-        <li>Apple</li>
-        <li>File</li>
-        <li>Edit</li>
+        <li class="dropdown">
+          <button class="btn dropdown-toggle" type-"button" data-toggle="dropdown">
+            Apple
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation">Action 1</li>
+            <li role="presentation">Action 2</li>
+            <li role="presentation">Action 3</li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <button class="btn dropdown-toggle" type-"button" data-toggle="dropdown">
+            File
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation">Action 1</li>
+            <li role="presentation">Action 2</li>
+            <li role="presentation">Action 3</li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <button class="btn dropdown-toggle" type-"button" data-toggle="dropdown">
+            Edit
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation">Action 1</li>
+            <li role="presentation">Action 2</li>
+            <li role="presentation">Action 3</li>
+          </ul>
+        </li>
     </ul>
 
     <ul class="right-menu menu-bar">

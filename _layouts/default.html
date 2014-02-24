@@ -12,7 +12,7 @@
     <body>
         {{content}}
         {% for js_name in page.extra_js %}
-            <script type="text/javascript" src="{{ site.url }}/{{ js_name }}"></script>
+            <script type="text/javascript" src="{{ js_name }}"></script>
         {% endfor %}
     </body>
 </html>
