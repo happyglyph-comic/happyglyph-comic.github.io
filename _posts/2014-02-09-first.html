@@ -10,6 +10,8 @@ extra_css:
 extra_js:
   - http://code.jquery.com/jquery-2.1.0.min.js
   - //netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js
+  - /assets/js/lib/sammy.min.js
+  - /assets/js/routes/episode1.js
 ---
 <header class="title-bar">
     <ul class="left-menu menu-bar">
@@ -18,7 +20,11 @@ extra_js:
             Apple
           </button>
           <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-            <li role="presentation">Action 1</li>
+            <li role="presentation">
+              <a href="#1">
+                Action 1
+              </a>
+            </li>
             <li role="presentation">Action 2</li>
             <li role="presentation">Action 3</li>
           </ul>
@@ -50,5 +56,7 @@ extra_js:
     </ul>
 </header>
 <div class="desktop">
-
+  <div id="scene-1" class="hidden">
+    o hai!
+  </div>
 </div>
