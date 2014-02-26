@@ -1,20 +1,32 @@
+/***** Title Bar *****/
 .title-bar {
-    width: 100%;
-    padding: 5px 0;
     background-color: #eeeeee;
+    box-shadow: 1px 1px 10px #000;
+    height: 35px;
     position: relative;
+    width: 100%;
+    z-index: 1000;
 }
 .title-bar .left-menu {
+    left: 10px;
 }
 .title-bar .right-menu {
+    right: 10px;
 }
 .title-bar .menu-bar {
+    position: absolute;
+    z-index: 1000;
 }
 
-.title-bar .menu-bar li {
-    display: inline;
+.btn.btn-system-tray {
+
 }
+
+/***** Desktop *****/
+
 .desktop {
     background-color: #438583;
+    position: relative;
     height: 100%;
 }
+
